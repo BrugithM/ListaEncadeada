@@ -20,4 +20,17 @@ public class ListaEncadeada<T>{
         }
         this.tamanho++;
     }
+
+    public void adicionarProximo(T elemento) {
+        if (this.ultimo == this.inicio) {
+            No<T> novoNo = new No<>(elemento);
+            this.ultimo = novoNo;
+        } else {
+            No<T> novoNo = new No<>(elemento, this.ultimo);
+        }
+        this.ultimo = ultimo;
+        System.out.println("Inicio:" + inicio);
+        System.out.println("Ultimo" + ultimo);
+        this.tamanho++;
+    }
 }
