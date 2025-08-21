@@ -6,15 +6,18 @@ public class Main {
         ListaEncadeada lista = new ListaEncadeada();
 
         lista.adicionarInicio("guy");
+        System.out.println("Inicio1: "+ lista.getInicio());
+        System.out.println("Ultimo1: "+ lista.getUltimo());
 
-        System.out.println(lista.toString());
+        lista.adicionar(1,"next" );
+        System.out.println("Inicio2: "+ lista.getInicio());
+        System.out.println("Ultimo2: "+ lista.getUltimo());
 
-        ListaEncadeada lista2 = new ListaEncadeada();
-        lista2.adicionarProximo("next");
-        System.out.println(lista2.toString());
+        lista.adicionar(1,"help");
 
-        ListaEncadeada lista3 = new ListaEncadeada();
-        lista3.adicionarProximo("help");
-        System.out.println(lista3.toString());
+        System.out.println("Inicio3: "+ lista.getInicio());
+        System.out.println("Ultimo3: "+ lista.getUltimo());
+
+        System.out.println("No 1: "+ lista.buscarNo(2));
     }
 }
